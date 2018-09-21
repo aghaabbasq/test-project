@@ -7,5 +7,4 @@ import cucumber.api.junit.Cucumber;
 @Cucumber.Options(features= {"features"},glue={"signUp"})
 public class TestRunner {
 
-	
 }

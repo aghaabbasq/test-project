@@ -1,11 +1,11 @@
-Feature: Test Campaign Monitor signup scenario
+Feature: Sighup
+	In order to use Campaign Monitor
+	As a user
+	I want to be able to signup
 
-Scenario: Step-1: Test enter valid credentials
-Given Open Chrome V-68 and go to  https://www.campaignmonitor.com/signup/
-When User input "AbbasTester" "Practice" "abbastester201@gmail.com" and "Test@201"
-Then User should be navigated to Step-2
 
-Scenario: Step-2: Test user can selecet options from dropdown
-Given: User have successfully finished Step-1
-When: User can select options form dropdown
-Then: User should be navigated to Step-3
+Scenario: Signup
+Given Open Chrome and go to  https://www.campaignmonitor.com/signup/
+Then User signup as "Qazvini" "PracticeCampMang" "abbas201@campmang.com" "Testing@110" and create an account
+Then User will provide account type details by selecting options from dropdown and continue
+Then User has successfully signed up
