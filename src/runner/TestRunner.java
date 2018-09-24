@@ -4,7 +4,7 @@ import org.junit.runner.RunWith;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@Cucumber.Options(features= {"features"},glue={"signUp"})
+@Cucumber.Options(features= {"features"},glue={"signUp.Testcases"})
 public class TestRunner {
 
 }
