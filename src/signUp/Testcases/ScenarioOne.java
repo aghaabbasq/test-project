@@ -32,16 +32,13 @@ public class ScenarioOne {
 	   // parameterising test data. This will allow us to define test date before writing script.
 		
 		signupPage Signup=new signupPage(driver); // creating an object to pass driver. When driver passed, it will internally call constructer
-		
 		Signup.SignupForCampaignMonitor( "Qazvini", "PracticeCampMang", "abbas201@campmang.com", "Testing@110");
 		
 	}
 	
 	@Then("^User click on button to create an account$")
 	public void User_click_on_button_to_create_an_account() throws Throwable {
-	    
-		// driver.findElement(By.className("primary")).click();
-		
+	    		
 		driver.findElement(By.cssSelector("button.cmbtn.primary")).click();
 		// This verifies that there is a button which can be clicked
 	}
